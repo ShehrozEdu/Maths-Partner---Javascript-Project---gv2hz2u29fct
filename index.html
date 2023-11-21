@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Math Solver App</title>
+</head>
+<body>
+    <header>
+        <h1>Math Solver App</h1>
+    </header>
+    <main id="main-content">
+        <div id="search-page">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h2>Problem</h2>
+                <button onclick="showHistory()">Saved Solution</button>
+            </div>
+            
+            <form onsubmit="searchProblem(event)">
+                <input type="text" id="expressionInput" placeholder="Enter math problem">
+                <select id="categorySelect">
+                    <option value="derive">Derive</option>
+                    <option value="integrate">Integrate</option>
+                    <option value="simplify">Simplify</option>
+                    <option value="cos">Cosine</option>
+                    <option value="sin">Sine</option>
+                    <option value="tan">Tangent</option>
+                </select>
+                <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+            </form>
 
+            <div id="solutionCard"></div>
+            <main id="history-content"></main>
+        </div>
+    </main>
+    <script src="App.js"></script>
+</body>
+</html>
