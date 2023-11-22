@@ -56,7 +56,7 @@ function showHistory() {
 
     if (problems.length === 0) {
         historyContent.innerHTML = '<p>No saved solutions.</p>';
-        return;
+        return; //m
     }
 
     // Loop through saved problems and display them
