@@ -31,6 +31,9 @@ form {
 #solutionCard {
     margin-top: 20px;
 }
+.text-flex{
+display: flex;
+}
 
 button {
     background-color: #333;
@@ -38,7 +41,7 @@ button {
     border: none;
     padding: 10px;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 button:hover {
@@ -47,8 +50,18 @@ button:hover {
 
 .search-btn{
     border-radius: 50%;
-    background-color: gray;
+    background-color: #55555534;
 }
 .fa-search{
     color: #000;
+}
+
+#expressionInput{
+    border-radius: 10px;
+    background-color: #55555534;
+}
+#categorySelect{
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
 }
